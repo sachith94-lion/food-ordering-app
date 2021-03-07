@@ -133,7 +133,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t63-gS-5au"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w0Q-9m-13k"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bu6-Vx-3sI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -250,7 +250,7 @@
         <!--Home View Controller-->
         <scene sceneID="4Ge-FU-QVL">
             <objects>
-                <viewController id="Gf3-fa-tmd" customClass="HomeViewController" customModule="S_M_A_Weerasinghe_COBSCComp192P_025" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomViewID" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="Gf3-fa-tmd" customClass="HomeViewController" customModule="S_M_A_Weerasinghe_COBSCComp192P_025" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bUf-Or-VAN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
