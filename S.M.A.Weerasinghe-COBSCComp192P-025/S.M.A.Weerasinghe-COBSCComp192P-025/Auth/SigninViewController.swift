@@ -34,5 +34,8 @@ class SigninViewController: UIViewController {
         
     }
     
-
+    @IBAction func forgotPassButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "forgotPassSegue", sender: nil)
+    }
+    
 }

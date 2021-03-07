@@ -203,22 +203,30 @@
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8pw-S4-i25">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzt-hm-l5E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="119"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="Sign In"/>
+                                                        <connections>
+                                                            <action selector="signpage_Tapped:" destination="H6p-yj-GDT" eventType="touchUpInside" id="0hj-ic-yZz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4x-id-AhE">
+                                                        <rect key="frame" x="0.0" y="139" width="374" height="119"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="Forgot Password?"/>
+                                                        <connections>
+                                                            <action selector="forgotPassButton:" destination="H6p-yj-GDT" eventType="touchUpInside" id="8dK-u6-USh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzt-hm-l5E">
-                                                <rect key="frame" x="143" y="105" width="88" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Sign In"/>
-                                                <connections>
-                                                    <action selector="signpage_Tapped:" destination="H6p-yj-GDT" eventType="touchUpInside" id="0hj-ic-yZz"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="8pw-S4-i25" firstAttribute="leading" secondItem="9eT-QY-Y3b" secondAttribute="leading" id="ASz-Ga-j8h"/>
-                                            <constraint firstItem="zzt-hm-l5E" firstAttribute="centerX" secondItem="9eT-QY-Y3b" secondAttribute="centerX" id="Cn6-X1-ZXM"/>
                                             <constraint firstItem="8pw-S4-i25" firstAttribute="top" secondItem="9eT-QY-Y3b" secondAttribute="top" id="H0w-RQ-BdL"/>
-                                            <constraint firstItem="zzt-hm-l5E" firstAttribute="centerY" secondItem="9eT-QY-Y3b" secondAttribute="centerY" id="VCQ-Yb-pca"/>
                                             <constraint firstAttribute="trailing" secondItem="8pw-S4-i25" secondAttribute="trailing" id="euI-r8-G1K"/>
                                             <constraint firstAttribute="bottom" secondItem="8pw-S4-i25" secondAttribute="bottom" id="log-8p-P1f"/>
                                         </constraints>
@@ -241,11 +249,12 @@
                         <outlet property="passwordField" destination="uMi-p0-oth" id="g5S-gx-ePe"/>
                         <outlet property="signinpage_Button" destination="zzt-hm-l5E" id="LzZ-SA-I94"/>
                         <segue destination="Gf3-fa-tmd" kind="show" identifier="userSigninSegue" id="Nlf-A4-Y0A"/>
+                        <segue destination="Pgz-r5-vMn" kind="show" identifier="forgotPassSegue" id="FrH-0C-coF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Duf-us-5jR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2441" y="-372"/>
+            <point key="canvasLocation" x="2458" y="-490"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="4Ge-FU-QVL">
@@ -395,6 +404,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY1-3F-Hb2" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2458" y="350"/>
+        </scene>
+        <!--Forgot Pass View Controller-->
+        <scene sceneID="8oC-UX-nBt">
+            <objects>
+                <viewController id="Pgz-r5-vMn" customClass="ForgotPassViewController" customModule="S_M_A_Weerasinghe_COBSCComp192P_025" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tMo-ip-Fay">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qaz-tr-Nfb">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBG-Zk-1Zs">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEs-FE-y3U">
+                                                <rect key="frame" x="45" y="70" width="284" height="118"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vEs-FE-y3U" firstAttribute="centerX" secondItem="XBG-Zk-1Zs" secondAttribute="centerX" id="7sN-RL-SJP"/>
+                                            <constraint firstItem="vEs-FE-y3U" firstAttribute="top" relation="lessThanOrEqual" secondItem="XBG-Zk-1Zs" secondAttribute="top" constant="70" id="Iht-GM-tJv"/>
+                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="vEs-FE-y3U" secondAttribute="bottom" constant="70" id="Rvz-Qc-ffz"/>
+                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="vEs-FE-y3U" secondAttribute="trailing" constant="70" id="VIm-Ba-3n1"/>
+                                            <constraint firstItem="vEs-FE-y3U" firstAttribute="centerY" secondItem="XBG-Zk-1Zs" secondAttribute="centerY" id="ZNo-kT-Xo0"/>
+                                            <constraint firstItem="vEs-FE-y3U" firstAttribute="leading" relation="lessThanOrEqual" secondItem="XBG-Zk-1Zs" secondAttribute="leading" constant="70" id="wU9-fW-nXF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaS-pw-GAt">
+                                        <rect key="frame" x="0.0" y="258" width="374" height="258"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hnO-Hd-cSP">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cF3-Ju-ie4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hnO-Hd-cSP" secondAttribute="bottom" id="3Gb-Kh-fhc"/>
+                                            <constraint firstItem="hnO-Hd-cSP" firstAttribute="leading" secondItem="IaS-pw-GAt" secondAttribute="leading" id="sXr-Je-pFT"/>
+                                            <constraint firstItem="hnO-Hd-cSP" firstAttribute="top" secondItem="IaS-pw-GAt" secondAttribute="top" id="wQD-n5-DYB"/>
+                                            <constraint firstAttribute="trailing" secondItem="hnO-Hd-cSP" secondAttribute="trailing" id="yUQ-OA-CZX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-0O-vvL">
+                                        <rect key="frame" x="0.0" y="516" width="374" height="258"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vE0-lr-zB6">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZE-De-lvF">
+                                                <rect key="frame" x="153" y="105" width="68" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Send"/>
+                                                <connections>
+                                                    <action selector="forgotPassButton:" destination="Pgz-r5-vMn" eventType="touchUpInside" id="2T3-vd-hmz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vE0-lr-zB6" firstAttribute="leading" secondItem="uUr-0O-vvL" secondAttribute="leading" id="2qK-xj-16Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="vE0-lr-zB6" secondAttribute="bottom" id="4Nr-3B-d1R"/>
+                                            <constraint firstItem="5ZE-De-lvF" firstAttribute="centerX" secondItem="uUr-0O-vvL" secondAttribute="centerX" id="Dqk-Sy-8Ad"/>
+                                            <constraint firstItem="5ZE-De-lvF" firstAttribute="centerY" secondItem="uUr-0O-vvL" secondAttribute="centerY" id="eKQ-6I-afy"/>
+                                            <constraint firstAttribute="trailing" secondItem="vE0-lr-zB6" secondAttribute="trailing" id="vuC-tS-gLN"/>
+                                            <constraint firstItem="vE0-lr-zB6" firstAttribute="top" secondItem="uUr-0O-vvL" secondAttribute="top" id="xaN-QH-Yrn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="omJ-T0-7Lm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="omJ-T0-7Lm" firstAttribute="bottom" secondItem="Qaz-tr-Nfb" secondAttribute="bottom" id="8dW-eD-GMJ"/>
+                            <constraint firstItem="omJ-T0-7Lm" firstAttribute="trailing" secondItem="Qaz-tr-Nfb" secondAttribute="trailing" constant="20" id="K1m-gK-oTl"/>
+                            <constraint firstItem="Qaz-tr-Nfb" firstAttribute="leading" secondItem="omJ-T0-7Lm" secondAttribute="leading" constant="20" id="X3U-0B-c67"/>
+                            <constraint firstItem="Qaz-tr-Nfb" firstAttribute="top" secondItem="omJ-T0-7Lm" secondAttribute="top" id="XLb-Td-Uc2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9mx-cL-ZXH"/>
+                    <connections>
+                        <outlet property="emailField" destination="cF3-Ju-ie4" id="zhe-je-7UF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS9-De-0zk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="-1334"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
