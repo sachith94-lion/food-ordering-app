@@ -10,7 +10,6 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var welconinLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
