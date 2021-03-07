@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		166B4EC725F4BD6B00C89AE1 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4EC625F4BD6B00C89AE1 /* SigninViewController.swift */; };
 		166B4ECC25F4BD7D00C89AE1 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4ECB25F4BD7D00C89AE1 /* SignupViewController.swift */; };
 		166B4ED425F4C5F900C89AE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 166B4ED325F4C5F900C89AE1 /* GoogleService-Info.plist */; };
+		166B4EEE25F4CD2800C89AE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4EED25F4CD2800C89AE1 /* HomeViewController.swift */; };
+		166B4EF325F4D0FB00C89AE1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4EF225F4D0FB00C89AE1 /* Service.swift */; };
 		6F33E4C461D351B4E011B39E /* Pods_S_M_A_Weerasinghe_COBSCComp192P_025_S_M_A_Weerasinghe_COBSCComp192P_025UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F77D5198675339C40F223F1 /* Pods_S_M_A_Weerasinghe_COBSCComp192P_025_S_M_A_Weerasinghe_COBSCComp192P_025UITests.framework */; };
 		9229400541CC52AA9DB30BC8 /* Pods_S_M_A_Weerasinghe_COBSCComp192P_025.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2970C7F0C1981BE4343FAD4 /* Pods_S_M_A_Weerasinghe_COBSCComp192P_025.framework */; };
 		E3C2DAE39F2A02B2AEA5267E /* Pods_S_M_A_Weerasinghe_COBSCComp192P_025Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64DE13A8C1BD3782C21F8B7 /* Pods_S_M_A_Weerasinghe_COBSCComp192P_025Tests.framework */; };
@@ -63,6 +65,8 @@
 		166B4EC625F4BD6B00C89AE1 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		166B4ECB25F4BD7D00C89AE1 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		166B4ED325F4C5F900C89AE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		166B4EED25F4CD2800C89AE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		166B4EF225F4D0FB00C89AE1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4BDE43AA03EA95662038CD14 /* Pods-S.M.A.Weerasinghe-COBSCComp192P-025.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S.M.A.Weerasinghe-COBSCComp192P-025.debug.xcconfig"; path = "Target Support Files/Pods-S.M.A.Weerasinghe-COBSCComp192P-025/Pods-S.M.A.Weerasinghe-COBSCComp192P-025.debug.xcconfig"; sourceTree = "<group>"; };
 		526D3AAD9D77B1E0E04950F1 /* Pods-S.M.A.Weerasinghe-COBSCComp192P-025.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S.M.A.Weerasinghe-COBSCComp192P-025.release.xcconfig"; path = "Target Support Files/Pods-S.M.A.Weerasinghe-COBSCComp192P-025/Pods-S.M.A.Weerasinghe-COBSCComp192P-025.release.xcconfig"; sourceTree = "<group>"; };
 		5E653C1432BA40CC78819F26 /* Pods-S.M.A.Weerasinghe-COBSCComp192P-025-S.M.A.Weerasinghe-COBSCComp192P-025UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S.M.A.Weerasinghe-COBSCComp192P-025-S.M.A.Weerasinghe-COBSCComp192P-025UITests.release.xcconfig"; path = "Target Support Files/Pods-S.M.A.Weerasinghe-COBSCComp192P-025-S.M.A.Weerasinghe-COBSCComp192P-025UITests/Pods-S.M.A.Weerasinghe-COBSCComp192P-025-S.M.A.Weerasinghe-COBSCComp192P-025UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		166B4E3F25F334D500C89AE1 /* S.M.A.Weerasinghe-COBSCComp192P-025 */ = {
 			isa = PBXGroup;
 			children = (
+				166B4EEC25F4CB0200C89AE1 /* User */,
 				166B4EC025F4BD3300C89AE1 /* Auth */,
 				166B4E4025F334D500C89AE1 /* AppDelegate.swift */,
 				166B4E4225F334D500C89AE1 /* SceneDelegate.swift */,
@@ -136,6 +141,7 @@
 				166B4E5125F334D600C89AE1 /* Info.plist */,
 				166B4E4925F334D500C89AE1 /* S_M_A_Weerasinghe_COBSCComp192P_025.xcdatamodeld */,
 				166B4EAC25F4958D00C89AE1 /* Extensions.swift */,
+				166B4EF225F4D0FB00C89AE1 /* Service.swift */,
 			);
 			path = "S.M.A.Weerasinghe-COBSCComp192P-025";
 			sourceTree = "<group>";
@@ -168,6 +174,14 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		166B4EEC25F4CB0200C89AE1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				166B4EED25F4CD2800C89AE1 /* HomeViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		5D8F10D9C10078294DC46FBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +202,6 @@
 				67FD0DA3359B0654D09D5F8B /* Pods-S.M.A.Weerasinghe-COBSCComp192P-025Tests.debug.xcconfig */,
 				ACB5AD74A252336C6F5ED442 /* Pods-S.M.A.Weerasinghe-COBSCComp192P-025Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -434,7 +447,9 @@
 				166B4EAD25F4958D00C89AE1 /* Extensions.swift in Sources */,
 				166B4ECC25F4BD7D00C89AE1 /* SignupViewController.swift in Sources */,
 				166B4EC225F4BD5E00C89AE1 /* WelcomeViewController.swift in Sources */,
+				166B4EEE25F4CD2800C89AE1 /* HomeViewController.swift in Sources */,
 				166B4EC725F4BD6B00C89AE1 /* SigninViewController.swift in Sources */,
+				166B4EF325F4D0FB00C89AE1 /* Service.swift in Sources */,
 				166B4E4125F334D500C89AE1 /* AppDelegate.swift in Sources */,
 				166B4E4B25F334D500C89AE1 /* S_M_A_Weerasinghe_COBSCComp192P_025.xcdatamodeld in Sources */,
 				166B4E4325F334D500C89AE1 /* SceneDelegate.swift in Sources */,

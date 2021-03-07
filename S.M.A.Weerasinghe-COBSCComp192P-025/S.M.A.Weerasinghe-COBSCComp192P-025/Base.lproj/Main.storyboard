@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="2441" y="-372"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="4Ge-FU-QVL">
             <objects>
-                <viewController id="Gf3-fa-tmd" sceneMemberID="viewController">
+                <viewController id="Gf3-fa-tmd" customClass="HomeViewController" customModule="S_M_A_Weerasinghe_COBSCComp192P_025" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bUf-Or-VAN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,11 +262,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyL-Ea-K2V">
+                                <rect key="frame" x="20" y="101" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logoutButton_Tapped:" destination="Gf3-fa-tmd" eventType="touchUpInside" id="CKx-Eh-gxc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kaD-UI-knw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="O7Q-rW-kzj"/>
+                    <connections>
+                        <outlet property="welconinLabel" destination="rcT-tA-yT0" id="fwK-E0-fKf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdO-X8-JB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
