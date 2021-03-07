@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SigninViewController: UIViewController {
 
@@ -16,12 +17,21 @@ class SigninViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
     @IBAction func signpage_Tapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "userSigninSegue", sender: nil)
+        let auth = Auth.auth()
+        
+        auth.signIn(withEmail: emailField.text!, password: passwordField.text!) { (authResult, error) in
+            if error != nil{
+                self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated: true, completion: nil)
+                return
+            }
+            self.performSegue(withIdentifier: "userSigninSegue", sender: nil)
+        }
+        
     }
     
 
